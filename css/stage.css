@@ -385,18 +385,15 @@ body
         margin-top:10px;
         margin-bottom:10px; 
     }
+    h1{
+	    font-size: calc(25px + 3.3vw);
 }
 .btn{
     margin-top:5px;
 }
 html { 
 	scroll-behavior: smooth; 
-	--res:calc(0.01 * 10vmin);
+	
 }
-h1{
-	font-size: calc(64 * var(--res));
-}
-h4{
-	font-size: calc(64 * var(--res));
-}
+
 	
