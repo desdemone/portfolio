@@ -389,4 +389,14 @@ body
 .btn{
     margin-top:5px;
 }
-html { scroll-behavior: smooth; }
+html { 
+	scroll-behavior: smooth; 
+	--res:calc(0.01 * 10vmin);
+}
+h1{
+	font-size: calc(64 * var(--res));
+}
+h4{
+	font-size: calc(64 * var(--res));
+}
+	
