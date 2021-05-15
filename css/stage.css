@@ -398,5 +398,11 @@ html {
 	scroll-behavior: smooth; 
 	
 }
+h1 {
+    background: linear-gradient(120deg,#07d4e7 0%,#034b55 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 	
