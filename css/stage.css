@@ -1,0 +1,406 @@
+body
+{
+    font-family: georgia;
+}
+.container-fluid {
+    background-color: rgb(166, 165, 165);
+    
+}
+ /*---------Titre---------- */
+
+.titre {
+    text-align: center;
+    border: 2px;
+    width:100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*--------navbar-------------*/
+
+.navbar {
+    margin-top: 10px;
+    background-color: rgb(70, 69, 69);
+    padding-left: 150px;
+}
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: rgb(104, 174, 231)
+}
+
+.navbar .nav-item .nav-link {
+    color:rgb(221, 217, 217);
+}
+.logoval{
+    width: 80px;
+  }
+
+/*---------intro---------------*/
+.intro{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+/*--presentation_du_groupe--*/
+
+.embed{
+    text-align: center;
+}
+
+.card_presentation {
+    padding-left: 30px;
+    padding-top: 15px;
+    
+}
+
+
+.histoire{
+    line-height:25px;
+}
+/*---logo_presentation----*/
+
+.img {
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+/*------------ParticulesJS-------------*/
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+
+/*--Menu_général*/
+
+.bmenu{
+   text-align: center;
+    
+}
+.bmenu li{
+    font-size: 50px;
+    display: block;
+}
+.bmenu li a{
+	
+    color: rgb(59, 58, 58);
+	display: block;
+	
+	text-align: center;
+	text-shadow: 0px 0px 6px #fff;
+	
+	-moz-transform: scale(0.5); 
+	-ms-transform: scale(0.5); 
+	-o-transform: scale(0.5); 
+	-webkit-transform: scale(0.5); 
+	transform: scale(0.5); 
+	-webkit-transition: all 0.6s linear;
+	-moz-transition: all 0.6s linear;
+	-o-transition: all 0.6s linear;
+	-ms-transition: all 0.6s linear;
+	transition: all 0.6s linear;
+}
+.bmenu:hover li a{
+	text-shadow: 0px 0px 15px #fff;
+}
+.bmenu li a:hover{
+	text-shadow: 0px 0px 1px #fff;
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	-webkit-transform: scale(1); 
+	transform: scale(1); 
+}
+/*--img_ex--*/
+
+.ex_as400{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.ex_visual{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.ex_web{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.ex_cloud{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.appli{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.gob{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.editeur{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.maquetteur{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.colonne{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.entite{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.serveur{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.chargt_list{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.liste{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+.objet{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;  
+}
+.parametre{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;  
+}
+.modification{
+    width:600px;
+    height: auto;
+    margin-top:10px;
+    margin-bottom:10px;  
+}
+/*------------footer---------------*/
+
+.footer{
+    margin-top:20px;
+}
+.footer :last-child{
+    color:black;
+}
+/*--Menu_footer--*/
+
+.list-inline-item{
+    font-family:"Staatliches";
+    overflow:hidden;
+    position:relative;
+    font-size:20px;
+    color:black;
+}
+.slide-link span {
+    padding:10px;
+    display:inline-block;
+    transition:transform 0.3s
+    ease-out;
+
+}
+.slide-link span:nth-child(2){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link span:nth-child(3){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link span:nth-child(4){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link:hover span{
+    transform:translateX(-100%)
+}
+
+/*--Media_queries*/
+
+@media screen and (max-width:975px) {
+    
+   
+    .img-responsive{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        
+    }
+    .card_presentation{
+        width:300px;
+        margin-left:15px;
+        padding-left:5px;
+
+    }
+    .ex_as400{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    
+    }
+    .ex_visual{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    .ex_web{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+
+    }
+    .ex_cloud{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+
+    }
+    .appli{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    .gob{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    .editeur{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    .maquetteur{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .colonne{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .entite{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .serveur{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .chargt_list{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+    .liste{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px; 
+    }
+    .objet{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px; 
+    }
+    .parametre{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px;  
+    }
+    .modification{
+        width:200px;
+        height: auto;
+        margin-top:10px;
+        margin-bottom:10px; 
+    }
+}
+.btn{
+    margin-top:5px;
+}
+html { scroll-behavior: smooth; }
