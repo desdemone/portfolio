@@ -54,7 +54,9 @@ body
 
 /*--presentation_du_groupe--*/
 
-
+.card_presentation{
+	width:350px;
+}
 
 .histoire{
     line-height:25px;
