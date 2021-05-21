@@ -23,11 +23,15 @@
                 var nom=Form.nom.value;
                 var email=Form.email.value;
                 var message=Form.message.value;
+                var prenom=Form.prenom.value;
+                var entreprise=Form.entreprise.value;
+                var telephone=Form.telephone.value;
+                
                 Email.send({
                     SecureToken : "bf31bc7b-87f6-432a-b4e2-2782956da1c1",
-                    To : 'v.nourelsantoro@hotmail.fr',
+                    To : 'nourelsantoro@gmail.com',
                     From : email,
-                    Subject : "Test",
+                    Subject : "Contact",
                     Body : message,
                 })
                 .then(function(message){
@@ -414,15 +418,15 @@
                         </div>
                         <div>
                             <label for="prenom">Prenom :</label>
-                            <input type="text" id="prenom" name="user_prenom">
+                            <input type="text" id="prenom" name="prenom">
                         </div>
                         <div>
                             <label for="nom_entreprise">Nom de votre entreprise :</label>
-                            <input type="text" id="nom_entreprise" name="user_entreprise">
+                            <input type="text" id="nom_entreprise" name="entreprise">
                         </div>
                         <div>
                             <label for="tel">Téléphone :</label>
-                            <input type="tel" id="telephone" name="user_telephone">
+                            <input type="tel" id="telephone" name="telephone">
                         </div>
                         <div>
                             <label for="mail">e-mail :</label>
