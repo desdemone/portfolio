@@ -15,8 +15,8 @@
     "bf31bc7b-87f6-432a-b4e2-2782956da1c1",
     To : 'missvbossa@hotmail.fr',
     From : "nourelsantoro@gmail.com",
-    Subject : "coucou",
-    Body : "hjghcdhchjdcjhchjvc",
+    Subject : "Contact",
+    Body : ,
     })
     .then(function(message){
     alert("Email envoyé")
@@ -26,10 +26,33 @@
 </head>
 <body>
     <form method="post" class="box-mail">
-        <div class="form-groupe">
-            <label for="utilisateur">Nom d'utilisateur</label>
-            <input type="text" id="utilsateur" placeholder="Nom d'utilisateur" maxlength="24">
-        </div>
+        <div>
+                            <label for="name">Nom :</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div>
+                            <label for="prenom">Prenom :</label>
+                            <input type="text" id="prenom" name="user_prenom">
+                        </div>
+                        <div>
+                            <label for="nom_entreprise">Nom de votre entreprise :</label>
+                            <input type="text" id="nom_entreprise" name="user_entreprise">
+                        </div>
+                        <div>
+                            <label for="tel">Téléphone :</label>
+                            <input type="tel" id="telephone" name="user_telephone">
+                        </div>
+                        <div>
+                            <label for="mail">e-mail :</label>
+                            <input type="email" id="mail" name="user_mail">
+                        </div>
+                        <div>
+                            <label for="msg">Message :</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                        <div class="bouton">
+                        <input  type="button" value="Envoyer" onclick="sendEmail()"/>
+                        </div>
         <input type="button" value="Send Email" onclick="sendEmail()"/>
         </form>
         
