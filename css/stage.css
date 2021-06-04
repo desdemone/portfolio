@@ -83,7 +83,7 @@ body {
 
 .bmenu {
     text-align: center;
-
+    display: list-item block;
 }
 
 .bmenu li {
