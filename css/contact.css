@@ -104,7 +104,9 @@ body {
 .slide-link:hover span {
   transform: translateX(-100%)
 }
-
+.form {
+  backgroung-color : red;
+}
 /*-------------footer---------------*/
 
 .footer {
@@ -116,11 +118,5 @@ body {
 }
 
 
-@media screen and (max-width:975px) {
-
-  #formulaire {
-    width      : 150px;
-    margin-left: -40px;
-  }
 
 }
