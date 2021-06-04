@@ -104,10 +104,7 @@ body {
 .slide-link:hover span {
   transform: translateX(-100%)
 }
-.form {
-  backgroung-color : red;
-  margin-left : 200 px;
-}
+
 /*-------------footer---------------*/
 
 .footer {
