@@ -2,7 +2,7 @@ body
 {
     font-family: georgia;
 }
-/*-------------- TITRE--------------------- */
+/* TITRE  */
 
 .titre {
     width:100%;
@@ -14,7 +14,7 @@ body
 }
 
 
-/*--------------NAVBAR--------------------- */
+/*  NAVBAR  */
 
 .navbar {
     margin-top: 10px;
@@ -41,7 +41,7 @@ body
 
 
 
-/*--------------EFFETS SUR BODY --------------------- */
+/*  EFFETS SUR BODY   */
 
 .container-fluid {
     background-color: rgb(166, 165, 165);
@@ -58,7 +58,9 @@ body
 .card_presentation{
     padding-left:5px;
 }
-/*----logo----*/
+
+/*   logo   */
+
 .sante_ios{
     
         width:600px;
@@ -99,7 +101,7 @@ margin-top:10px;
 margin-bottom:15px;
 }
 
-/*------------ParticulesJS-------------*/
+/*   ParticulesJS     */
 
 #particles-js {
     position: absolute;
@@ -108,7 +110,7 @@ margin-bottom:15px;
     position: fixed;
 }
 
-/*------------footer---------------*/
+/*   footer    */
 
 .footer{
     margin-top:20px;
@@ -155,6 +157,7 @@ margin-bottom:15px;
 .slide-link:hover span{
     transform:translateX(-100%)
 }
+
 /*--Media_queries*/
 
 @media screen and (max-width:975px) {
@@ -196,5 +199,6 @@ margin-bottom:15px;
         margin-top:10px;
         margin-bottom:10px; 
     }
+    
     }
 
