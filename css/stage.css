@@ -134,7 +134,7 @@ h1{
     transform        : scale(1);
 }
 ul .bmenu{
-    padding-inline-start: -20px;
+    padding-inline-start: -100px;
 }
 
 /*--img_ex--*/
