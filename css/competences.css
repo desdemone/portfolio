@@ -2,7 +2,7 @@ body
 {
     font-family: georgia;
 }
-/*-------------- TITRE--------------------- */
+    /*     TITRE    */
 
 .titre {
    
@@ -15,7 +15,7 @@ body
 }
 
 
-/*--------------NAVBAR--------------------- */
+/*    NAVBAR     */
 
 .navbar {
     margin-top: 10px;
@@ -41,25 +41,25 @@ body
   }
 
 
-/*--------------EFFETS SUR BODY --------------------- */
+/*  EFFETS SUR BODY   */
 
 .container-fluid {
     background-color: rgb(166, 165, 165);
     font-family: Times New Roman, Trebuchet MS;
 }
-/*------bouton cv--------*/
+/*   BOUTON CV    */
 
 .btn{
     margin-top:15px;
     margin-bottom:15px;
 }
 
-/*--------------POSITION DU CV --------------------- */
+/*  POSITION DU CV   */
 
 
 
 
-/*------------ParticulesJS-------------*/
+/*  ParticulesJS   */
 
 #particles-js {
     position: absolute;
@@ -67,7 +67,7 @@ body
     height: 100%;
     position: fixed;
 }
-/*------------footer---------------*/
+/*  footer  */
 
 .footer{
     margin-top:20px;
