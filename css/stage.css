@@ -7,7 +7,7 @@ body {
 
 }
 
-/*---------Titre---------- */
+/*  Titre  */
 
 .titre {
     text-align    : center;
@@ -19,7 +19,7 @@ body {
 }
 
 
-/*--------navbar-------------*/
+/*   navbar   */
 
 .navbar {
     margin-top      : 10px;
@@ -45,7 +45,7 @@ body {
     width: 80px;
 }
 
-/*---------intro---------------*/
+/*   intro   */
 .intro {
     text-align   : center;
     font-weight  : bold;
@@ -65,7 +65,7 @@ h1{
     line-height: 25px;
 }
 
-/*---logo_presentation----*/
+/*  logo_presentation  */
 
 .img {
     text-align : center;
@@ -78,7 +78,8 @@ h1{
     margin-bottom:25px;
     font-size:1.2em;
 }
-/*------------ParticulesJS-------------*/
+
+/*   ParticulesJS    */
 
 #particles-js {
     position: absolute;
@@ -88,7 +89,7 @@ h1{
 }
 
 
-/*--Menu_général*/
+/*  Menu_général  */
 
 .bmenu {
     text-align: center;
@@ -139,7 +140,7 @@ ul.bmenu{
     transform        : scale(1);
 }
 
-/*--img_ex--*/
+/*  img_ex   */
 
 .ex_as400 {
     width        : 600px;
@@ -258,7 +259,7 @@ ul.bmenu{
     margin-bottom: 10px;
 }
 
-/*------------footer---------------*/
+/*     footer      */
 
 .footer {
     margin-top: 20px;
@@ -268,7 +269,7 @@ ul.bmenu{
     color: black;
 }
 
-/*--Menu_footer--*/
+/*   Menu_footer     */
 
 .list-inline-item {
     font-family: "Staatliches";
@@ -310,7 +311,7 @@ ul.bmenu{
     transform: translateX(-100%)
 }
 
-/*--Media_queries*/
+/*  Media_queries   */
 
 @media screen and (max-width:975px) {
 
