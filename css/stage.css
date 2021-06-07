@@ -133,6 +133,9 @@ h1{
     -webkit-transform: scale(1);
     transform        : scale(1);
 }
+ul .bmenu{
+    padding-inline-start: 0;
+}
 
 /*--img_ex--*/
 
