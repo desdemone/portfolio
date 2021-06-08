@@ -57,8 +57,8 @@ body
 }
 .lead{
     padding-left:10px;
-    padding-rigth :5px;
-    padding-bottom : 10px;
+    padding-rigth :10px;
+    padding-top : 10px;
 }
 li{
     font-size : 1.2em;
