@@ -1,0 +1,124 @@
+body
+{
+    font-family: georgia;
+}
+/* TITRE */
+
+.titre {
+   
+    text-align: center;
+    border: 2px;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    margin-top: 10px;
+    background-color: rgb(70, 69, 69);
+    padding-left: 150px;
+}
+
+.navbar-nav>li {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.navbar .nav-item:hover .nav-link {
+    color: rgb(104, 174, 231)
+}
+
+.navbar .nav-item .nav-link {
+    color:rgb(221, 217, 217); 
+}
+.logoval{
+    width: 80px;
+  }
+
+
+/*EFFETS SUR BODY  */
+
+.container-fluid {
+    background-color: rgb(166, 165, 165);
+    font-family: Times New Roman, Trebuchet MS;
+}
+/*bouton cv*/
+
+.btn{
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+/*POSITION DU tableau  */
+
+.embed{
+    margin-top: 15px;
+}
+
+
+/*ParticulesJS*/
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+/*footer*/
+
+.footer{
+    margin-top:20px;
+}
+.footer :last-child{
+    color:black;
+}
+
+
+.list-inline-item{
+    font-family:"Staatliches";
+    overflow:hidden;
+    position:relative;
+    font-size:20px;
+    color:black;
+}
+.slide-link span {
+    padding:10px;
+    display:inline-block;
+    transition:transform 0.3s
+    ease-out;
+
+}
+.slide-link span:nth-child(2){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link span:nth-child(3){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link span:nth-child(4){
+    position:absolute;
+    width:100%;
+    text-align: center;
+    left:100%;
+}
+.slide-link:hover span{
+    transform:translateX(-100%)
+}
+
+@media screen and (max-width:975px) {
+    embed{
+        width:200px;
+        height: 300px;
+    }
+    
+}
