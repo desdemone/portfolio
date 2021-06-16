@@ -67,7 +67,12 @@ body
 .tit{
 color :red;
 }
-
+.img-responsive{
+     width        : 600px;
+    height       : auto;
+    margin-top   : 10px;
+    margin-bottom: 10px;
+}
 /*ParticulesJS*/
 
 #particles-js {
