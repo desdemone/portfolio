@@ -443,52 +443,7 @@
                         </h4>
                             <p >A la fin du chapitre sur la POO "GESCOM". </p>
                           
-                            <ul class="gescom">
-                                public class Gescom {
-
-    /* Déclaration de l'objet de type BdD */
-    static BdD bdd;
-
-    public static void main(String[] args) {
-        /* Instanciation de l'objet de type BdD */
-
-        bdd = new BdD();
-        /* Déclaration et instanciation d'un objet de type Representant */
-        Representant unRepresentant = new Representant(100, "Paul", "Auchon", bdd.getClientsBdD());
-        int choix = menu();
-        while (choix != 0) {
-            switch (choix) {
-                case 1:
-                    listerClients(unRepresentant);
-                    break;
-                case 2:
-                    afficherArticlesCommandes(unRepresentant);
-                    break;
-                case 3:
-                    rechercherCommande(unRepresentant);
-                    break;
-                case 4:
-                    ajouterCommande(unRepresentant);
-                    afficherCommandesClient(unRepresentant);
-                    break;
-                case 5:
-                    supprimerCommande(unRepresentant);
-                    listerClients(unRepresentant);
-                    break;
-                case 6:
-                    supprimerLigne(unRepresentant);
-                    break;
-                case 7:
-                    afficherCaClient(unRepresentant);
-                    break;
-                case 8:
-                    afficherCaClients(unRepresentant);
-                    break;
-            }
-            choix = menu();
-        }
-    }  
-                            </ul>
+                            
                            
                              
                    
