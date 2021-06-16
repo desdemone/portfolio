@@ -69,7 +69,7 @@ color :red;
 }
 .img-responsive{
      width        : 600px;
-    height       : auto;
+    height       : 500px;
     margin-top   : 10px;
     margin-bottom: 10px;
 }
