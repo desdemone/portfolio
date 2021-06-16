@@ -122,7 +122,7 @@ body
 @media screen and (max-width:975px) {
    .card_result{
     
-    
+    width:100px;
     margin-left:-100px;
     padding-left:-50px;
 }
