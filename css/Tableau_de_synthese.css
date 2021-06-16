@@ -122,8 +122,8 @@ body
 @media screen and (max-width:975px) {
    .card_result{
     
-    width:100px;
-   
+    width:200px;
+    margin-left:-50px;
     padding-left:-50px;
 }
     
