@@ -54,11 +54,13 @@ body
     margin-bottom:15px;
 }
 
-/*liste cryter*/
+/*java*/
 .crypter{
     list-style: none;
 }
-
+.card_java{
+    background-color: red;
+}
 /*ParticulesJS*/
 
 #particles-js {
