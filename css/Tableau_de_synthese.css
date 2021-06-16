@@ -54,12 +54,10 @@ body
     margin-bottom:15px;
 }
 
-/*POSITION DU tableau  */
-
-.embed{
-    margin-top: 15px;
+/*liste cryter*/
+.crypter{
+    list-style: none;
 }
-
 
 /*ParticulesJS*/
 
