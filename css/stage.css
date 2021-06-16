@@ -139,6 +139,10 @@ ul.bmenu{
     -webkit-transform: scale(1);
     transform        : scale(1);
 }
+/*margin-bottom btn*/
+.btn{
+    margin-bottom:15px;
+}
 
 /*  img_ex   */
 
