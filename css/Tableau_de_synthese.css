@@ -65,8 +65,7 @@ body
     padding-left:-50px;
 }
 .tit{
-   background-color : gainsboro;
-   width:250px;
+  font-color : lightslategray;
 }
 
 /*ParticulesJS*/
