@@ -58,6 +58,9 @@ body
 .crypter{
     list-style: none;
 }
+.card-result{
+    background-color:grey;
+}
 
 /*ParticulesJS*/
 
