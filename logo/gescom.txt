@@ -1,0 +1,167 @@
+package gescom;
+
+import metier.*;
+import dao.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+import utilitaires.*;
+import static utilitaires.Outils.dateToString;
+import static utilitaires.Outils.stringToDate;
+
+public class Gescom {
+
+    /* Déclaration de l'objet de type BdD */
+    static BdD bdd;
+
+    public static void main(String[] args) {
+        /* Instanciation de l'objet de type BdD */
+
+        bdd = new BdD();
+        /* Déclaration et instanciation d'un objet de type Representant */
+        Representant unRepresentant = new Representant(100, "Paul", "Auchon", bdd.getClientsBdD());
+        int choix = menu();
+        while (choix != 0) {
+            switch (choix) {
+                case 1:
+                    listerClients(unRepresentant);
+                    break;
+                case 2:
+                    afficherArticlesCommandes(unRepresentant);
+                    break;
+                case 3:
+                    rechercherCommande(unRepresentant);
+                    break;
+                case 4:
+                    ajouterCommande(unRepresentant);
+                    afficherCommandesClient(unRepresentant);
+                    break;
+                case 5:
+                    supprimerCommande(unRepresentant);
+                    listerClients(unRepresentant);
+                    break;
+                case 6:
+                    supprimerLigne(unRepresentant);
+                    break;
+                case 7:
+                    afficherCaClient(unRepresentant);
+                    break;
+                case 8:
+                    afficherCaClients(unRepresentant);
+                    break;
+            }
+            choix = menu();
+        }
+    }
+
+    private static int menu() {
+        System.out.println("Menu général");
+        System.out.println();
+        System.out.println("1..Lister les clients et leurs commandes");
+        System.out.println("2..Liste des articles commandés");
+        System.out.println("3..Rechercher une commande");
+        System.out.println("4..Ajouter une commande");
+        System.out.println("5..Supprimer une commande");
+        System.out.println("6..Supprimer une ligne d'une commande");
+        System.out.println("7..Afficher le CA d'un client");
+        System.out.println("8..Afficher le CA de tous les clients");
+        System.out.println("0..Quitter");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Votre choix : ");
+        int choix = sc.nextInt();
+        return choix;
+    }
+
+    /**
+     * Saisie de l'id du client à recherché, si trouvé parcours de la liste des
+     * commande et pour chaque commande, affiche la commande sinon affiche
+     * client inexistant
+     *
+     * @param unRepresentant
+     */
+    private static void afficherCaClient(Representant unRepresentant) {
+        List<Client> lesClients = unRepresentant.getLesClients();
+        int idClient = 0;
+        Client clientAtrouver = unRepresentant.getClientById(idClient);
+        if (clientAtrouver != null) {
+            for (Client unClient : lesClients) {
+                if (unClient == clientAtrouver) {
+                    List<Commande> lesCommandes = unClient.getLesCommandes();
+                    for (Commande uneCommande : lesCommandes) {
+                        unClient.cumulCA();
+                    }
+                    System.out.println("CA du client : " + unClient.getCaClient());
+                }
+            }
+        } else {
+            if (clientAtrouver == null) {
+                System.out.println("Client inexistant ! ");
+            }
+
+        }
+    }
+
+    /**
+     * Saisie de l'id du client à recherché, si trouvé parcours de la liste des
+     * commande et pour chaque commande, affiche la commande sinon affiche
+     * client inexistant
+     *
+     * @param unRepresentant
+     */
+    private static void afficherCommandesClient(Representant unRepresentant) {
+        int idClient = 0;
+        Client clientAtrouver = unRepresentant.getClientById(idClient);
+        if (clientAtrouver != null) {
+            List<Commande> lesCommandes = clientAtrouver.getLesCommandes();
+            for (Commande uneCommande : lesCommandes) {
+                afficherCommande(uneCommande);
+            }
+
+        } else {
+            System.out.println("Client inexistant ! ");
+        }
+
+    }
+
+    /**
+     * Parcours de la liste des clients et pour chaque client affiche son id et
+     * sa raison sociale, puis parcours de la liste des commandes du client et
+     * affiche chaque commande
+     *
+     * @param unRepresentant
+     */
+    private static void listerClients(Representant unRepresentant) {
+        List<Client> lesClients = unRepresentant.getLesClients();               // regroupe les clients d'un representant dans une collection
+        System.out.println("La liste des clients et de leurs commandes ");
+        for (Client unClient : lesClients) {                                    // parcours de la liste des clients
+            System.out.println(unClient.getIdClient() + " " + unClient.getRaisonSociale()); // affichage de l'id client et raison sociale
+            List<Commande> lesCommandes = unClient.getLesCommandes();           // récupération des clients dans une collection de commandes
+            for (Commande uneCommande : lesCommandes) {                         // parcours de la collection de commande
+                afficherCommande(uneCommande);                                  //  à chaque commande afficher
+            }
+        }
+    }
+
+    /**
+     * Saisie du numéro de la commande à suprimer, parcours de la liste de tous
+     * les clients, si la commande est trouvée, la supprimer de la liste des
+     * commandes de ce client et arrêter le parcours.
+     *
+     * @param unRepresentant
+     */
+    private static void supprimerCommande(Representant unRepresentant) {
+        List<Client> lesClients = unRepresentant.getLesClients();
+        int idCommandeASupprimer = Clavier.saisie_int("N° commande à supprimer : ");
+        for (Client unClient : lesClients) {
+            List<Commande> lesCommandes = unClient.getLesCommandes();
+            for (Commande uneCommande : lesCommandes) {
+                if (uneCommande.getIdCommande() == idCommandeASupprimer) {
+                    lesCommandes.remove(uneCommande);
+                    break;
+                }
+            }
+        }
+    }
+
+ETC......
