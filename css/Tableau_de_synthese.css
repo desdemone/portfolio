@@ -120,9 +120,10 @@ body
 }
 
 @media screen and (max-width:975px) {
-    embed{
-        width:200px;
-        height: 300px;
-    }
+   .card_result{
     
+    width:300px;
+    margin-left:-350px;
+    padding-left:-50px;
+}
 }
