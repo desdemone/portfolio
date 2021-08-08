@@ -114,7 +114,7 @@ body
 }
 
 @media screen and (max-width:975px) {
-    embed{
+    cv{
         width:200px;
         height: 300px;
     }
