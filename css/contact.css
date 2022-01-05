@@ -106,7 +106,9 @@ body {
 .slide-link:hover span {
   transform: translateX(-100%)
 }
-
+.col form{
+  width : 500px;
+}
 
 
 .footer {
