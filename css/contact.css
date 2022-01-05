@@ -106,9 +106,6 @@ body {
 .slide-link:hover span {
   transform: translateX(-100%)
 }
-#formulaire{
-  margin-top : 50px;
-}
 
 
 .footer {
