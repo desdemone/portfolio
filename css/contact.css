@@ -106,7 +106,7 @@ body {
 .slide-link:hover span {
   transform: translateX(-100%)
 }
-.col form{
+#formulaire{
   width : 500px;
 }
 
